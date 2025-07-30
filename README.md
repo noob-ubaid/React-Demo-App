@@ -1,12 +1,33 @@
-# React + Vite
+# React Demo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app built as part of a technical interview task.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (with Hooks)
+- React Router
+- Context API
+- Tailwind CSS
+- JSONPlaceholder API
+- Vitest + React Testing Library
 
-## Expanding the ESLint configuration
+## 📄 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Login Page
+- Phone input with validation (`+254712345678` is valid)
+- Shows error for invalid input
+- Redirects to Main Page on success
+
+### 2. Main Page
+- Fetches and displays list from API
+- Search bar filters items live
+- Click item to view details
+
+### 3. Detail Page
+- Shows selected item details
+- Includes back to Main Page
+
+## ✅ Testing
+
+- One unit test using **Vitest** + **React Testing Library**
+- Test file: `Login.test.jsx`
